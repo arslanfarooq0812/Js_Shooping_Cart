@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shopping-cart">
+            <h2>Shopping cart</h2>
+            <form id="shopping-form">
+                <label for="item">Item:</label>
+                <input type="text" id="item" name="item">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity">
+                <button type="button" onclick="saveItem()">Save</button>
+                <button type="button" onclick="updateItem()">Update</button>
+                <button type="button" onclick="deleteItem()">Delete</button>
+            </form>
+        </div>
+        <div class="shopping-list">
+            <h2>Shopping List</h2>
+            <table id="shopping-list-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button onclick="clearList()">Clear</button>
+        <i> <b>*</b>Delete all records.</i>
+
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Form developed by <span><i>Arslan Farooq</i></span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
